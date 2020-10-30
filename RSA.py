@@ -3,9 +3,8 @@ from Crypto.PublicKey import RSA
 from Crypto.Random import get_random_bytes
 from Crypto.Cipher import AES, PKCS1_OAEP
 
-option = input("1. Generate new keypair \n2. Encrypt string to file \n3. Decrypt file to string \nOption: ")
-
 def RSA_choice():
+	option = input("1. Generate new keypair \n2. Encrypt string to file \n3. Decrypt file to string \nOption: ")
 	if option == "1":
 		# Create keys directory
 		if os.path.exists("./keys"):
